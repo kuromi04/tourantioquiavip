@@ -1,77 +1,159 @@
-/* Archivo styles.css */
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+.navbar {
+    background-color: #007bff;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?nature,waterfall') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
     display: flex;
     justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.banner {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background-color: #000;
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-}
-
-.banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    align-items: center;
     color: #fff;
     text-align: center;
 }
 
-.banner-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #f00;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+.hero .display-4 {
+    font-weight: bold;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
+.about-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.icon-feature {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    background-color: #343a40;
+    color: #ccc;
 }
+
+footer h5 {
+    font-size: 1.2rem;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+.dark-mode .navbar-nav .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .hero {
+    background: url('https://source.unsplash.com/1600x900/?night,waterfall') no-repeat center center;
+    background-size: cover;
+}
+
+.dark-mode footer {
+    background-color: #1d1d1d;
+    color: #bbb;
+}
+
+.dark-mode footer ul li a {
+    color: #bbb;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.auth-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.auth-toggle {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dark-mode .auth-container {
+    background-color: #121212;
+}
+
+.dark-mode .auth-card {
+    background-color: #1d1d1d;
+    color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .auth-toggle {
+    color: #90caf9;
+}
+
+.dark-mode .form-control {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.dark-mode .form-control:focus {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #007bff;
+}
+
+.dark-mode .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.dark-mode .auth-card label {
+    color: #e0e0e0;
+}
+
