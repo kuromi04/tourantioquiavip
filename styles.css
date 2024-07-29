@@ -157,3 +157,22 @@ footer ul li a:hover {
     color: #e0e0e0;
 }
 
+.dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-mode .dark-mode-toggle {
+    background-color: #444;
+}
