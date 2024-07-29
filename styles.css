@@ -76,7 +76,7 @@ footer ul li a:hover {
     background-color: #333;
 }
 
-.dark-mode .navbar-nav .nav-link {
+.dark-mode .nav-link {
     color: #e0e0e0 !important;
 }
 
@@ -176,4 +176,3 @@ footer ul li a:hover {
 .dark-mode .dark-mode-toggle {
     background-color: #444;
 }
-
